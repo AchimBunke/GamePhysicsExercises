@@ -40,15 +40,7 @@ void MassSpringSystemSimulator::reset() {
 	switch (m_iTestCase)
 	{
 	case 0:
-		m_fMass = 10;
-		m_fStiffness = 40.0;
-		m_fDamping = 0.0;
-		m_iIntegrator = EULER;
-		gravity = 0.0;
-		addSpring(
-			addMassPoint(Vec3(0, 0, 0), Vec3(-1, 0, 0), false),
-			addMassPoint(Vec3(0, 2, 0), Vec3(1, 0, 0), false ),
-			1);
+		
 		break;
 	case 1:
 		m_fMass = 10;
@@ -124,6 +116,40 @@ void MassSpringSystemSimulator::initUI(DrawingUtilitiesClass* DUC)
 	switch (m_iTestCase)
 	{
 	case 0:
+		points.clear();
+		springs.clear();
+		m_fMass = 10;
+		m_fStiffness = 40.0;
+		m_fDamping = 0.0;
+		m_iIntegrator = EULER;
+		gravity = 0.0;
+		addSpring(
+			addMassPoint(Vec3(0, 0, 0), Vec3(-1, 0, 0), false),
+			addMassPoint(Vec3(0, 2, 0), Vec3(1, 0, 0), false),
+			1);
+		simulateTimestep(0.1f);
+		std::cout << "Euler: \n";
+		std::cout << "Position of Point 1: " << getPositionOfMassPoint(0) << "\n";
+		std::cout << "Velocity of Point 1: " << getVelocityOfMassPoint(0) << "\n\n";
+		std::cout << "Position of Point 2: " << getPositionOfMassPoint(1) << "\n";
+		std::cout << "Velocity of Point 2: " << getVelocityOfMassPoint(1) << "\n\n";
+		points.clear();
+		springs.clear();
+		m_fMass = 10;
+		m_fStiffness = 40.0;
+		m_fDamping = 0.0;
+		m_iIntegrator = MIDPOINT;
+		gravity = 0.0;
+		addSpring(
+			addMassPoint(Vec3(0, 0, 0), Vec3(-1, 0, 0), false),
+			addMassPoint(Vec3(0, 2, 0), Vec3(1, 0, 0), false),
+			1);
+		simulateTimestep(0.1f);
+		std::cout << "Midpoint: \n";
+		std::cout << "Position of Point 1: " << getPositionOfMassPoint(0) << "\n";
+		std::cout << "Velocity of Point 1: " << getVelocityOfMassPoint(0) << "\n\n";
+		std::cout << "Position of Point 2: " << getPositionOfMassPoint(1) << "\n";
+		std::cout << "Velocity of Point 2: " << getVelocityOfMassPoint(1) << "\n\n";
 
 		break;
 	case 3:
@@ -180,70 +206,75 @@ void MassSpringSystemSimulator::applyExternalForce(Vec3 force) {
 
 void MassSpringSystemSimulator::simulateTimestep(float timeStep)
 {
-	// update current setup for each frame
-	switch(m_iIntegrator)
-	{// handling different cases
-	case EULER:
-	{
-
-		// clearForces
-		clearForces();
-		// calculateAndAddSpringForces
-		calculateAndAddSpringForces();
-		// dampening
-		addDampeningAndGravityForces();
-		// integratePositions
-		integratePositions(timeStep);
-		// integrateVelocity
-		integrateVelocity(timeStep);
-
-	}
-		break;
-	case MIDPOINT:
-	{
-		// clear
-		clearForces();
-		// midstep
-		vector<Point> oldPoints = vector<Point>(points);
-		// calculateAndAddSpringForces
-		calculateAndAddSpringForces();
-		// dampening
-		addDampeningAndGravityForces();
-		// integratePositions
-		integratePositions(timeStep / 2.0);
-		// integrateVelocity
-		integrateVelocity(timeStep / 2.0);
-
-		// at midstep
-		clearForces();
-		// calculate midstep forces
-		calculateAndAddSpringForces();
-		// dampening add midstep
-		addDampeningAndGravityForces();
-
-		// reset to old position
-		for (int i = 0; i < getNumberOfMassPoints(); i++) {
-			points[i].position = oldPoints[i].position;
-		}
-		// integrate old positions with midstep velocity
-		integratePositions(timeStep);
-		// reset to old velocity
-		for (int i = 0; i < getNumberOfMassPoints(); i++) {
-			points[i].velocity = oldPoints[i].velocity;
-		}
-		// integrate old velocity with midstep forces
-		integrateVelocity(timeStep);
-	}
+	switch (m_iTestCase) {
+	case 0:
 		break;
 	default:
+		// update current setup for each frame
+		switch (m_iIntegrator)
+		{// handling different cases
+		case EULER:
+		{
+
+			// clearForces
+			clearForces();
+			// calculateAndAddSpringForces
+			calculateAndAddSpringForces();
+			// dampening
+			addDampeningAndGravityForces();
+			// integratePositions
+			integratePositions(timeStep);
+			// integrateVelocity
+			integrateVelocity(timeStep);
+
+		}
 		break;
+		case MIDPOINT:
+		{
+			// clear
+			clearForces();
+			// midstep
+			vector<Point> oldPoints = vector<Point>(points);
+			// calculateAndAddSpringForces
+			calculateAndAddSpringForces();
+			// dampening
+			addDampeningAndGravityForces();
+			// integratePositions
+			integratePositions(timeStep / 2.0);
+			// integrateVelocity
+			integrateVelocity(timeStep / 2.0);
+
+			// at midstep
+			clearForces();
+			// calculate midstep forces
+			calculateAndAddSpringForces();
+			// dampening add midstep
+			addDampeningAndGravityForces();
+
+			// reset to old position
+			for (int i = 0; i < getNumberOfMassPoints(); i++) {
+				points[i].position = oldPoints[i].position;
+			}
+			// integrate old positions with midstep velocity
+			integratePositions(timeStep);
+			// reset to old velocity
+			for (int i = 0; i < getNumberOfMassPoints(); i++) {
+				points[i].velocity = oldPoints[i].velocity;
+			}
+			// integrate old velocity with midstep forces
+			integrateVelocity(timeStep);
+		}
+		break;
+		default:
+			break;
+		}
+		/*// print
+		int c = 0;
+		for (int i = 0; i < getNumberOfMassPoints(); i++) {
+			cout << "P" << c << " - Pos: " << points[i].position << "   Vel: " << points[i].velocity << endl;
+			c++;
+		}*/
 	}
-	/*// print
-	int c = 0;
-	for (int i = 0; i < getNumberOfMassPoints(); i++) {
-		cout << "P" << c << " - Pos: " << points[i].position << "   Vel: " << points[i].velocity << endl;
-		c++;
-	}*/
 }
 
 
