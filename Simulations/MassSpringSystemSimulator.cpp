@@ -116,6 +116,7 @@ void MassSpringSystemSimulator::initUI(DrawingUtilitiesClass* DUC)
 	switch (m_iTestCase)
 	{
 	case 0:
+	{
 		points.clear();
 		springs.clear();
 		m_fMass = 10;
@@ -127,7 +128,16 @@ void MassSpringSystemSimulator::initUI(DrawingUtilitiesClass* DUC)
 			addMassPoint(Vec3(0, 0, 0), Vec3(-1, 0, 0), false),
 			addMassPoint(Vec3(0, 2, 0), Vec3(1, 0, 0), false),
 			1);
-		simulateTimestep(0.1f);
+		// clearForces
+		clearForces();
+		// calculateAndAddSpringForces
+		calculateAndAddSpringForces();
+		// dampening
+		addDampeningAndGravityForces();
+		// integratePositions
+		integratePositions(0.1);
+		// integrateVelocity
+		integrateVelocity(0.1);
 		std::cout << "Euler: \n";
 		std::cout << "Position of Point 1: " << getPositionOfMassPoint(0) << "\n";
 		std::cout << "Velocity of Point 1: " << getVelocityOfMassPoint(0) << "\n\n";
@@ -144,13 +154,44 @@ void MassSpringSystemSimulator::initUI(DrawingUtilitiesClass* DUC)
 			addMassPoint(Vec3(0, 0, 0), Vec3(-1, 0, 0), false),
 			addMassPoint(Vec3(0, 2, 0), Vec3(1, 0, 0), false),
 			1);
-		simulateTimestep(0.1f);
+		// clear
+		clearForces();
+		// midstep
+		vector<Point> oldPoints = vector<Point>(points);
+		// calculateAndAddSpringForces
+		calculateAndAddSpringForces();
+		// dampening
+		addDampeningAndGravityForces();
+		// integratePositions
+		integratePositions(0.1 / 2.0);
+		// integrateVelocity
+		integrateVelocity(0.1 / 2.0);
+
+		// at midstep
+		clearForces();
+		// calculate midstep forces
+		calculateAndAddSpringForces();
+		// dampening add midstep
+		addDampeningAndGravityForces();
+
+		// reset to old position
+		for (int i = 0; i < getNumberOfMassPoints(); i++) {
+			points[i].position = oldPoints[i].position;
+		}
+		// integrate old positions with midstep velocity
+		integratePositions(0.1);
+		// reset to old velocity
+		for (int i = 0; i < getNumberOfMassPoints(); i++) {
+			points[i].velocity = oldPoints[i].velocity;
+		}
+		// integrate old velocity with midstep forces
+		integrateVelocity(0.1);
 		std::cout << "Midpoint: \n";
 		std::cout << "Position of Point 1: " << getPositionOfMassPoint(0) << "\n";
 		std::cout << "Velocity of Point 1: " << getVelocityOfMassPoint(0) << "\n\n";
 		std::cout << "Position of Point 2: " << getPositionOfMassPoint(1) << "\n";
 		std::cout << "Velocity of Point 2: " << getVelocityOfMassPoint(1) << "\n\n";
-
+	}
 		break;
 	case 3:
 		TwAddVarRW(DUC->g_pTweakBar, "Gravity", TW_TYPE_FLOAT, &gravity, "");

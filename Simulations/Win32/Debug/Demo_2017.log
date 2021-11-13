@@ -1,11 +1,17 @@
 ﻿  MassSpringSystemSimulator.cpp
 C:\Users\Quirin\Documents\GamePhysicsExercises\Simulations\util\vectorbase.h(11,1): warning C4005: 'NOMINMAX': macro redefinition
 C:\Users\Quirin\Documents\GamePhysicsExercises\Simulations\MassSpringSystemSimulator.cpp : message : see previous definition of 'NOMINMAX'
-C:\Users\Quirin\Documents\GamePhysicsExercises\Simulations\MassSpringSystemSimulator.cpp(179,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Quirin\Documents\GamePhysicsExercises\Simulations\MassSpringSystemSimulator.cpp(192,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Quirin\Documents\GamePhysicsExercises\Simulations\MassSpringSystemSimulator.cpp(243,32): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Quirin\Documents\GamePhysicsExercises\Simulations\MassSpringSystemSimulator.cpp(245,31): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Quirin\Documents\GamePhysicsExercises\Simulations\MassSpringSystemSimulator.cpp(355,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Quirin\Documents\GamePhysicsExercises\Simulations\MassSpringSystemSimulator.cpp(138,25): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Quirin\Documents\GamePhysicsExercises\Simulations\MassSpringSystemSimulator.cpp(140,24): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Quirin\Documents\GamePhysicsExercises\Simulations\MassSpringSystemSimulator.cpp(166,31): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Quirin\Documents\GamePhysicsExercises\Simulations\MassSpringSystemSimulator.cpp(168,30): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Quirin\Documents\GamePhysicsExercises\Simulations\MassSpringSystemSimulator.cpp(182,25): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Quirin\Documents\GamePhysicsExercises\Simulations\MassSpringSystemSimulator.cpp(188,24): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Quirin\Documents\GamePhysicsExercises\Simulations\MassSpringSystemSimulator.cpp(220,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Quirin\Documents\GamePhysicsExercises\Simulations\MassSpringSystemSimulator.cpp(233,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Quirin\Documents\GamePhysicsExercises\Simulations\MassSpringSystemSimulator.cpp(284,32): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Quirin\Documents\GamePhysicsExercises\Simulations\MassSpringSystemSimulator.cpp(286,31): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Quirin\Documents\GamePhysicsExercises\Simulations\MassSpringSystemSimulator.cpp(396,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 C:\Users\Quirin\Documents\GamePhysicsExercises\Simulations\util\vectorbase.h(204,36): warning C4244: 'argument': conversion from 'const Scalar' to 'float', possible loss of data
           with
           [
@@ -108,5 +114,5 @@ C:\Users\Quirin\Documents\GamePhysicsExercises\Simulations\util\matrixbase.h(774
               Scalar=double
           ]
 C:\Users\Quirin\Documents\GamePhysicsExercises\Simulations\util\vectorbase.h(1092,2): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\Quirin\Documents\GamePhysicsExercises\Simulations\MassSpringSystemSimulator.cpp(132): message : see reference to function template instantiation 'std::ostream &GamePhysics::operator <<<GamePhysics::Real>(std::ostream &,const GamePhysics::vector3Dim<GamePhysics::Real> &)' being compiled
+C:\Users\Quirin\Documents\GamePhysicsExercises\Simulations\MassSpringSystemSimulator.cpp(142): message : see reference to function template instantiation 'std::ostream &GamePhysics::operator <<<GamePhysics::Real>(std::ostream &,const GamePhysics::vector3Dim<GamePhysics::Real> &)' being compiled
   Demo_2017.vcxproj -> C:\Users\Quirin\Documents\GamePhysicsExercises\Win32\Debug\Simulations.lib
