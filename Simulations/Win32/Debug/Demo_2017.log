@@ -1,136 +1,415 @@
-﻿  RigidBodySystemSimulator.cpp
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\util\vectorbase.h(11,1): warning C4005: 'NOMINMAX': macro redefinition
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\RigidBodySystemSimulator.cpp : message : see previous definition of 'NOMINMAX'
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\RigidBodySystemSimulator.cpp(116,71): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\RigidBodySystemSimulator.cpp(145,21): warning C4018: '<': signed/unsigned mismatch
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\RigidBodySystemSimulator.cpp(183,21): warning C4018: '<': signed/unsigned mismatch
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\RigidBodySystemSimulator.cpp(209,14): warning C4244: 'initializing': conversion from 'Scalar' to 'float', possible loss of data
-          with
-          [
-              Scalar=double
-          ]
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\util\quaternion.h(67,44): warning C4244: 'argument': conversion from 'const Scalar' to 'float', possible loss of data
-          with
-          [
-              Scalar=GamePhysics::Real
-          ]
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\util\quaternion.h(66): message : while compiling class template member function 'GamePhysics::matrix4x4<double> GamePhysics::Quaternion<GamePhysics::Real>::getRotMat(void) const'
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\RigidBodySystemSimulator.cpp(49): message : see reference to function template instantiation 'GamePhysics::matrix4x4<double> GamePhysics::Quaternion<GamePhysics::Real>::getRotMat(void) const' being compiled
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\RigidBodySystemSimulator.h(20): message : see reference to class template instantiation 'GamePhysics::Quaternion<GamePhysics::Real>' being compiled
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\util\quaternion.h(67,42): warning C4244: 'argument': conversion from 'const Scalar' to 'float', possible loss of data
+﻿  rigidBody.cpp
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\vectorbase.h(11,1): warning C4005: 'NOMINMAX': macro redefinition
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\rigidBody.cpp : message : see previous definition of 'NOMINMAX'
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(28,23): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(28,66): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(31,76): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(125,21): warning C4018: '<': signed/unsigned mismatch
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(127,21): warning C4018: '<': signed/unsigned mismatch
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(144,21): warning C4018: '<': signed/unsigned mismatch
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(230,21): warning C4018: '<': signed/unsigned mismatch
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(259,21): warning C4018: '<': signed/unsigned mismatch
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(282,21): warning C4018: '<': signed/unsigned mismatch
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(307,21): warning C4018: '<': signed/unsigned mismatch
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\rigidBody.cpp(41,23): warning C4244: 'initializing': conversion from 'Scalar' to 'float', possible loss of data
           with
           [
               Scalar=GamePhysics::Real
           ]
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\util\quaternion.h(67,40): warning C4244: 'argument': conversion from 'const Scalar' to 'float', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\rigidBody.cpp(54,24): warning C4244: 'initializing': conversion from 'Scalar' to 'float', possible loss of data
           with
           [
               Scalar=GamePhysics::Real
           ]
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\util\quaternion.h(67,38): warning C4244: 'argument': conversion from 'const Scalar' to 'float', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\rigidBody.cpp(54,19): warning C4244: 'initializing': conversion from 'Scalar' to 'const float', possible loss of data
           with
           [
               Scalar=GamePhysics::Real
           ]
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\util\vectorbase.h(204,36): warning C4244: 'argument': conversion from 'const Scalar' to 'float', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\rigidBody.cpp(245,22): warning C4244: 'initializing': conversion from 'const Scalar' to 'float', possible loss of data
           with
           [
               Scalar=GamePhysics::Real
           ]
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\util\vectorbase.h(203): message : while compiling class template member function 'DirectX::XMVECTOR GamePhysics::vector3Dim<GamePhysics::Real>::toDirectXVector(void) const'
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\DrawingUtilitiesClass.h(285): message : see reference to function template instantiation 'DirectX::XMVECTOR GamePhysics::vector3Dim<GamePhysics::Real>::toDirectXVector(void) const' being compiled
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\util\vectorbase.h(859): message : see reference to class template instantiation 'GamePhysics::vector3Dim<GamePhysics::Real>' being compiled
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\util\vectorbase.h(204,34): warning C4244: 'argument': conversion from 'const Scalar' to 'float', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\rigidBody.cpp(245,16): warning C4244: 'initializing': conversion from 'const Scalar' to 'const float', possible loss of data
           with
           [
               Scalar=GamePhysics::Real
           ]
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\util\vectorbase.h(204,32): warning C4244: 'argument': conversion from 'const Scalar' to 'float', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\rigidBody.cpp(246,22): warning C4244: 'initializing': conversion from 'const Scalar' to 'float', possible loss of data
           with
           [
               Scalar=GamePhysics::Real
           ]
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\util\matrixbase.h(777,79): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\rigidBody.cpp(246,16): warning C4244: 'initializing': conversion from 'const Scalar' to 'const float', possible loss of data
+          with
+          [
+              Scalar=GamePhysics::Real
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\rigidBody.cpp(247,22): warning C4244: 'initializing': conversion from 'const Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=GamePhysics::Real
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\rigidBody.cpp(247,16): warning C4244: 'initializing': conversion from 'const Scalar' to 'const float', possible loss of data
+          with
+          [
+              Scalar=GamePhysics::Real
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\quaternion.h(67,44): warning C4244: 'argument': conversion from 'const Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=GamePhysics::Real
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\quaternion.h(66): message : while compiling class template member function 'GamePhysics::matrix4x4<double> GamePhysics::Quaternion<GamePhysics::Real>::getRotMat(void) const'
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\rigidBody.cpp(24): message : see reference to function template instantiation 'GamePhysics::matrix4x4<double> GamePhysics::Quaternion<GamePhysics::Real>::getRotMat(void) const' being compiled
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\rigidBody.hpp(83): message : see reference to class template instantiation 'GamePhysics::Quaternion<GamePhysics::Real>' being compiled
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\quaternion.h(67,42): warning C4244: 'argument': conversion from 'const Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=GamePhysics::Real
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\quaternion.h(67,40): warning C4244: 'argument': conversion from 'const Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=GamePhysics::Real
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\quaternion.h(67,38): warning C4244: 'argument': conversion from 'const Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=GamePhysics::Real
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(777,79): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
           with
           [
               Scalar=double
           ]
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\util\matrixbase.h(773): message : while compiling class template member function 'DirectX::XMMATRIX GamePhysics::matrix4x4<double>::toDirectXMatrix(void)'
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\DrawingUtilitiesClass.h(380): message : see reference to function template instantiation 'DirectX::XMMATRIX GamePhysics::matrix4x4<double>::toDirectXMatrix(void)' being compiled
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\DrawingUtilitiesClass.h(379): message : see reference to class template instantiation 'GamePhysics::matrix4x4<double>' being compiled
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\util\matrixbase.h(777,61): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(773): message : while compiling class template member function 'DirectX::XMMATRIX GamePhysics::matrix4x4<double>::toDirectXMatrix(void)'
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(395): message : see reference to function template instantiation 'DirectX::XMMATRIX GamePhysics::matrix4x4<double>::toDirectXMatrix(void)' being compiled
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(395): message : see reference to class template instantiation 'GamePhysics::matrix4x4<double>' being compiled
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(777,61): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
           with
           [
               Scalar=double
           ]
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\util\matrixbase.h(777,43): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(777,43): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
           with
           [
               Scalar=double
           ]
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\util\matrixbase.h(777,25): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(777,25): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
           with
           [
               Scalar=double
           ]
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\util\matrixbase.h(776,79): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(776,79): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
           with
           [
               Scalar=double
           ]
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\util\matrixbase.h(776,61): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(776,61): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
           with
           [
               Scalar=double
           ]
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\util\matrixbase.h(776,43): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(776,43): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
           with
           [
               Scalar=double
           ]
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\util\matrixbase.h(776,25): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(776,25): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
           with
           [
               Scalar=double
           ]
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\util\matrixbase.h(775,79): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(775,79): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
           with
           [
               Scalar=double
           ]
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\util\matrixbase.h(775,61): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(775,61): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
           with
           [
               Scalar=double
           ]
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\util\matrixbase.h(775,43): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(775,43): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
           with
           [
               Scalar=double
           ]
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\util\matrixbase.h(775,25): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(775,25): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
           with
           [
               Scalar=double
           ]
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\util\matrixbase.h(774,97): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(774,97): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
           with
           [
               Scalar=double
           ]
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\util\matrixbase.h(774,79): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(774,79): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
           with
           [
               Scalar=double
           ]
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\util\matrixbase.h(774,61): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(774,61): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
           with
           [
               Scalar=double
           ]
-F:\Development\Projects\Visual Studio\GP\Repo\Simulations\util\matrixbase.h(774,43): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(774,43): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
           with
           [
               Scalar=double
           ]
-  Demo_2017.vcxproj -> F:\Development\Projects\Visual Studio\GP\Repo\Win32\Debug\Simulations.lib
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\vectorbase.h(1092,2): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\rigidBody.cpp(44): message : see reference to function template instantiation 'std::ostream &GamePhysics::operator <<<GamePhysics::Real>(std::ostream &,const GamePhysics::vector3Dim<GamePhysics::Real> &)' being compiled
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\vectorbase.h(204,36): warning C4244: 'argument': conversion from 'const Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=GamePhysics::Real
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\vectorbase.h(203): message : while compiling class template member function 'DirectX::XMVECTOR GamePhysics::vector3Dim<GamePhysics::Real>::toDirectXVector(void) const'
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(745): message : see reference to function template instantiation 'DirectX::XMVECTOR GamePhysics::vector3Dim<GamePhysics::Real>::toDirectXVector(void) const' being compiled
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\vectorbase.h(859): message : see reference to class template instantiation 'GamePhysics::vector3Dim<GamePhysics::Real>' being compiled
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\vectorbase.h(204,34): warning C4244: 'argument': conversion from 'const Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=GamePhysics::Real
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\vectorbase.h(204,32): warning C4244: 'argument': conversion from 'const Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=GamePhysics::Real
+          ]
+  rigidBodySystem.cpp
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\vectorbase.h(11,1): warning C4005: 'NOMINMAX': macro redefinition
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\rigidBodySystem.cpp : message : see previous definition of 'NOMINMAX'
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(28,23): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(28,66): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(31,76): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(125,21): warning C4018: '<': signed/unsigned mismatch
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(127,21): warning C4018: '<': signed/unsigned mismatch
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(144,21): warning C4018: '<': signed/unsigned mismatch
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(230,21): warning C4018: '<': signed/unsigned mismatch
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(259,21): warning C4018: '<': signed/unsigned mismatch
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(282,21): warning C4018: '<': signed/unsigned mismatch
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(307,21): warning C4018: '<': signed/unsigned mismatch
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\rigidBodySystem.cpp(29,15): warning C4305: 'argument': truncation from 'double' to 'float'
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\rigidBodySystem.cpp(68,21): warning C4018: '<': signed/unsigned mismatch
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(777,79): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(773): message : while compiling class template member function 'DirectX::XMMATRIX GamePhysics::matrix4x4<double>::toDirectXMatrix(void)'
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(395): message : see reference to function template instantiation 'DirectX::XMMATRIX GamePhysics::matrix4x4<double>::toDirectXMatrix(void)' being compiled
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(395): message : see reference to class template instantiation 'GamePhysics::matrix4x4<double>' being compiled
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(777,61): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(777,43): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(777,25): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(776,79): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(776,61): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(776,43): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(776,25): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(775,79): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(775,61): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(775,43): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(775,25): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(774,97): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(774,79): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(774,61): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(774,43): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+  RigidBodySystemSimulator.cpp
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\vectorbase.h(11,1): warning C4005: 'NOMINMAX': macro redefinition
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\RigidBodySystemSimulator.cpp : message : see previous definition of 'NOMINMAX'
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(28,23): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(28,66): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(31,76): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(125,21): warning C4018: '<': signed/unsigned mismatch
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(127,21): warning C4018: '<': signed/unsigned mismatch
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(144,21): warning C4018: '<': signed/unsigned mismatch
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(230,21): warning C4018: '<': signed/unsigned mismatch
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(259,21): warning C4018: '<': signed/unsigned mismatch
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(282,21): warning C4018: '<': signed/unsigned mismatch
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(307,21): warning C4018: '<': signed/unsigned mismatch
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\vectorbase.h(204,36): warning C4244: 'argument': conversion from 'const Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=GamePhysics::Real
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\vectorbase.h(203): message : while compiling class template member function 'DirectX::XMVECTOR GamePhysics::vector3Dim<GamePhysics::Real>::toDirectXVector(void) const'
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\DrawingUtilitiesClass.h(285): message : see reference to function template instantiation 'DirectX::XMVECTOR GamePhysics::vector3Dim<GamePhysics::Real>::toDirectXVector(void) const' being compiled
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\vectorbase.h(859): message : see reference to class template instantiation 'GamePhysics::vector3Dim<GamePhysics::Real>' being compiled
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\vectorbase.h(204,34): warning C4244: 'argument': conversion from 'const Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=GamePhysics::Real
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\vectorbase.h(204,32): warning C4244: 'argument': conversion from 'const Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=GamePhysics::Real
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(777,79): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(773): message : while compiling class template member function 'DirectX::XMMATRIX GamePhysics::matrix4x4<double>::toDirectXMatrix(void)'
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\DrawingUtilitiesClass.h(380): message : see reference to function template instantiation 'DirectX::XMMATRIX GamePhysics::matrix4x4<double>::toDirectXMatrix(void)' being compiled
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\DrawingUtilitiesClass.h(379): message : see reference to class template instantiation 'GamePhysics::matrix4x4<double>' being compiled
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(777,61): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(777,43): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(777,25): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(776,79): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(776,61): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(776,43): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(776,25): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(775,79): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(775,61): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(775,43): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(775,25): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(774,97): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(774,79): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(774,61): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\matrixbase.h(774,43): warning C4244: 'argument': conversion from 'Scalar' to 'float', possible loss of data
+          with
+          [
+              Scalar=double
+          ]
+F:\Development\Tools\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory(714,68): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+F:\Development\Tools\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector(726): message : see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,GamePhysics::Vec3&,GamePhysics::Vec3&,int&>(_Alloc &,_Objty *const ,GamePhysics::Vec3 &,GamePhysics::Vec3 &,int &)' being compiled
+          with
+          [
+              _Alloc=std::allocator<RigidBody>,
+              _Ty=RigidBody,
+              _Objty=RigidBody
+          ]
+F:\Development\Tools\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector(726): message : see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,GamePhysics::Vec3&,GamePhysics::Vec3&,int&>(_Alloc &,_Objty *const ,GamePhysics::Vec3 &,GamePhysics::Vec3 &,int &)' being compiled
+          with
+          [
+              _Alloc=std::allocator<RigidBody>,
+              _Ty=RigidBody,
+              _Objty=RigidBody
+          ]
+F:\Development\Tools\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector(744): message : see reference to function template instantiation 'void std::vector<RigidBody,std::allocator<RigidBody>>::_Emplace_back_with_unused_capacity<GamePhysics::Vec3&,GamePhysics::Vec3&,int&>(GamePhysics::Vec3 &,GamePhysics::Vec3 &,int &)' being compiled
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\RigidBodySystemSimulator.cpp(150): message : see reference to function template instantiation 'void std::vector<RigidBody,std::allocator<RigidBody>>::emplace_back<GamePhysics::Vec3&,GamePhysics::Vec3&,int&>(GamePhysics::Vec3 &,GamePhysics::Vec3 &,int &)' being compiled
+  Generating Code...
+  Demo_2017.vcxproj -> F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Win32\Debug\Simulations.lib
