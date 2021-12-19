@@ -19,9 +19,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimulationsTester", "Simula
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ED911AC2-B600-4B15-8139-56C918000798}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Simulations", "..\Repo\Simulations\Demo_2017.vcxproj", "{3CABED2C-12F1-4408-AAAE-E2185A426F35}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Simulations", "Simulations_Ex3\Demo_2017.vcxproj", "{3CABED2C-12F1-4408-AAAE-E2185A426F35}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimulationsRunner_2017", "..\Repo\SimulationsRunner\SimulationsRunner_2017.vcxproj", "{0B7BAA5B-0753-4015-A8F3-8FA540FC8660}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimulationsRunner_2017", "SimulationsRunner_Ex3\SimulationsRunner_2017.vcxproj", "{0B7BAA5B-0753-4015-A8F3-8FA540FC8660}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

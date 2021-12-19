@@ -1,17 +1,7 @@
 ﻿  main.cpp
 F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\vectorbase.h(11,1): warning C4005: 'NOMINMAX': macro redefinition
 F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\main.cpp : message : see previous definition of 'NOMINMAX'
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(28,23): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(28,66): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(31,76): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(125,21): warning C4018: '<': signed/unsigned mismatch
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(127,21): warning C4018: '<': signed/unsigned mismatch
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(144,21): warning C4018: '<': signed/unsigned mismatch
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(230,21): warning C4018: '<': signed/unsigned mismatch
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(259,21): warning C4018: '<': signed/unsigned mismatch
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(282,21): warning C4018: '<': signed/unsigned mismatch
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(307,21): warning C4018: '<': signed/unsigned mismatch
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\main.cpp(43,27): warning C4305: 'initializing': truncation from 'double' to 'float'
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\main.cpp(48,27): warning C4305: 'initializing': truncation from 'double' to 'float'
 F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\vectorbase.h(204,36): warning C4244: 'argument': conversion from 'const Scalar' to 'float', possible loss of data
           with
           [

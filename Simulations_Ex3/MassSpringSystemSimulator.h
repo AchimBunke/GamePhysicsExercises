@@ -8,31 +8,15 @@
 #define MIDPOINT 2
 // Do Not Change
 
-struct Point {
-	Vec3 position;
-	Vec3 velocity;
-	float mass;
-	float damping;
-	bool isFixed;
-	Vec3 force;
-};
 
-struct Spring {
-	Point* p1;
-	Point* p2;
-	float initialLength;
-	float stiffness;
-};
-
-
-class MassSpringSystemSimulator :public Simulator {
+class MassSpringSystemSimulator:public Simulator{
 public:
 	// Construtors
 	MassSpringSystemSimulator();
-
+	
 	// UI Functions
-	const char* getTestCasesStr();
-	void initUI(DrawingUtilitiesClass* DUC);
+	const char * getTestCasesStr();
+	void initUI(DrawingUtilitiesClass * DUC);
 	void reset();
 	void drawFrame(ID3D11DeviceContext* pd3dImmediateContext);
 	void notifyCaseChanged(int testCase);
@@ -52,7 +36,7 @@ public:
 	Vec3 getPositionOfMassPoint(int index);
 	Vec3 getVelocityOfMassPoint(int index);
 	void applyExternalForce(Vec3 force);
-
+	
 	// Do Not Change
 	void setIntegrator(int integrator) {
 		m_iIntegrator = integrator;
@@ -70,18 +54,5 @@ private:
 	Point2D m_mouse;
 	Point2D m_trackmouse;
 	Point2D m_oldtrackmouse;
-
-	// extra 
-	// data
-	vector<Point> points;
-	vector<Spring> springs;
-	float maxMass = 0;
-	float gravity = 0;
-	void clearForces();
-	void calculateAndAddSpringForces();
-	void addDampeningAndGravityForces();
-	void integratePositions(float timeStep);
-	void integrateVelocity(float timeStep);
-	Point draggingObject;
 };
 #endif
