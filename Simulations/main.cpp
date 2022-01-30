@@ -22,8 +22,9 @@ using namespace GamePhysics;
 
 //#define TEMPLATE_DEMO
 //#define MASS_SPRING_SYSTEM
-#define RIGID_BODY_SYSTEM
+//#define RIGID_BODY_SYSTEM
 //#define SPH_SYSTEM
+#define COUPLED_SIMULATOR
 
 #ifdef TEMPLATE_DEMO
 #include "TemplateSimulator.h"
@@ -36,6 +37,10 @@ using namespace GamePhysics;
 #endif
 #ifdef SPH_SYSTEM
 //#include "SPHSystemSimulator.h"
+#endif
+
+#ifdef COUPLED_SIMULATOR
+#include "CoupledSimulator.h"
 #endif
 
 DrawingUtilitiesClass * g_pDUC;
@@ -369,6 +374,9 @@ int main(int argc, char* argv[])
 #endif
 #ifdef SPH_SYSTEM
 	//g_pSimulator= new SPHSystemSimulator();
+#endif
+#ifdef COUPLED_SIMULATOR
+	g_pSimulator = new CoupledSimulator();
 #endif
 	g_pSimulator->reset();
 

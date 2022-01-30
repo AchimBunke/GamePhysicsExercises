@@ -36,6 +36,9 @@ public:
 	void setVelocity(const GamePhysics::Vec3  velocity);
 	void setRotation(const GamePhysics::Quat  rotation);
 
+
+	float getMass();
+
 	GamePhysics::Vec3 collisonPoint;
 	GamePhysics::Vec3 collisioNormal;
 	GamePhysics::Vec3 totalVelocity;
@@ -63,6 +66,7 @@ public:
 	{
 		return m_objToWorld;
 	}
+
 
 //sprotected:
 	//struct CollisionInfo{ // the return structure, with these values, you should be able to calculate the impulse

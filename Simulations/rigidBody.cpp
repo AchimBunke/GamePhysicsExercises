@@ -234,6 +234,10 @@ void RigidBody::setRotation(const GamePhysics::Quat rotation)
 	m_rotation = rotation;
 }
 
+float RigidBody::getMass() {
+	return 1 / m_massInverse;
+}
+
 const GamePhysics::Vec3 RigidBody::getCenter() const
 {
 	return m_center;
