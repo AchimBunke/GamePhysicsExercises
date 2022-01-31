@@ -1,5 +1,5 @@
 #include "CoupledSimulator.h"
-#define DebugRigidBody
+//#define DebugRigidBody
 
 #include <math.h>
 
@@ -8,13 +8,15 @@ CoupledSimulator::CoupledSimulator()
 {
 	m_iTestCase = 0;
 	m_iIntegrator = 0;
+	numberSprings = 50;
+	numberRigidBodys = 40;
 	m_pRigidBodySystem = new RigidBodySystem();
 }
 
 
 const char* CoupledSimulator::getTestCasesStr()
 {
-	return "BasicTest,Setup1,Setup2";
+	return "Empty,Setup1,Setup2";
 }
 
 void CoupledSimulator::reset() {
@@ -26,6 +28,8 @@ void CoupledSimulator::reset() {
 void CoupledSimulator::initUI(DrawingUtilitiesClass* DUC)
 {
 	this->DUC = DUC;
+	TwAddVarRW(DUC->g_pTweakBar, "Rigidbodys", TW_TYPE_INT16, &numberRigidBodys, "");
+	TwAddVarRW(DUC->g_pTweakBar, "Springs", TW_TYPE_INT16, &numberSprings,"");
 }
 
 void CoupledSimulator::notifyCaseChanged(int testCase)
@@ -155,8 +159,8 @@ void CoupledSimulator::notifyCaseChanged(int testCase)
 		addSpring(23, 8, 100, 30);
 		break;
 	case 2:
-		int rb = 50;
-		int springs = 50;
+		int rb = numberRigidBodys;
+		int springs = numberSprings;
 		float maxDist = 100;
 		float maxSize = 5.0f;
 		float minSize = 0.1;
@@ -209,6 +213,7 @@ float CoupledSimulator::RandomFloat(float a, float b) {
 	float r = random * diff;
 	return a + r;
 }
+
 int CoupledSimulator::RandomInt(int a, int b) {
 	int random = rand() % (b-a);
 	return a + random;
@@ -302,26 +307,12 @@ void CoupledSimulator::drawFrame(ID3D11DeviceContext* pd3dImmediateContext)
 
 		}
 		DUC->endLine();
-
-		/*
-					std::vector<XMVECTOR> corners = rigidBody.getCorners();
-					Vec3 colors[8] = {Vec3(0,0,0),Vec3(0,0,1),Vec3(0,1,0),Vec3(0,1,1),Vec3(1,0,0),Vec3(1,0,1),Vec3(1,1,0),Vec3(1,1,1)};
-					for(int j = 0; j< 8;j++)
-					{
-						DUC->setUpLighting(Vec3(),0.4*Vec3(1,1,1),100,colors[j]);
-						DUC->drawSphere(corners[j],Vec3(0.02f, 0.02f, 0.02f));
-
-					}
-					*/
+	
 #endif
 	}	
 	for (int i = 0; i < getNumberOfSprings(); i++) {
 		float m1 = springs[i].p1->getMass();
 		float m2 = springs[i].p2->getMass();
-		/*float red1 = min(1.0f, m1 * 2 / maxMass);
-		float green1 = min(1.0f, 1.0f - ((2 * m1) - maxMass) / maxMass);
-		float red2 = min(1.0f, m2 * 2 / maxMass);
-		float green2 = min(1.0f, 1.0f - ((2 * m2) - maxMass) / maxMass);*/
 		float dif = sqrt(springs[i].p1->getCenter().squaredDistanceTo(springs[i].p2->getCenter())) - springs[i].initialLength;
 		float red = min(1.0f, (float)pow(dif / 2, 2.0));
 		float green = min(1.0f, (float)-pow(dif / 2, 2.0) + 1);

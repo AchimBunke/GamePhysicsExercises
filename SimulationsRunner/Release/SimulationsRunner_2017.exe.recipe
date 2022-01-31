@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\AntTweakBar\lib\AntTweakBar.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Win32\Release\SimulationsRunner_2017.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles>
+    <ContentFile>
+      <FullPath>F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Win32\Release\effect.fxo</FullPath>
+    </ContentFile>
+  </ContentFiles>
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

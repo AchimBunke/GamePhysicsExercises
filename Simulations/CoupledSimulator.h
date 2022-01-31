@@ -68,4 +68,7 @@ private:
 	float maxMass = 0;
 	float gravity = 0;
 	void calculateAndAddSpringForces();
+
+	int numberRigidBodys;
+	int numberSprings;
 };

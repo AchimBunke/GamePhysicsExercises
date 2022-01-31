@@ -11,39 +11,39 @@ F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collis
 F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(259,21): warning C4018: '<': signed/unsigned mismatch
 F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(282,21): warning C4018: '<': signed/unsigned mismatch
 F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\collisionDetect.h(307,21): warning C4018: '<': signed/unsigned mismatch
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(67,66): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(68,64): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(70,68): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(71,69): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(73,68): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(74,66): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(76,67): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(77,64): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(79,69): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(80,68): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(82,70): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(83,66): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(85,68): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(86,67): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(88,69): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(71,66): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(72,64): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(74,68): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(75,69): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(77,68): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(78,66): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(80,67): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(81,64): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(83,69): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(84,68): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(86,70): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(87,66): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
 F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(89,68): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(91,66): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(92,67): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(94,68): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(95,68): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(97,68): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(98,70): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(100,71): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(101,71): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(103,66): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(104,74): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(106,68): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(107,69): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(162,22): warning C4305: 'initializing': truncation from 'double' to 'float'
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(171,107): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(249,2): warning C4065: switch statement contains 'default' but no 'case' labels
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(325,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(410,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(90,67): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(92,69): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(93,68): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(95,66): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(96,67): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(98,68): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(99,68): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(101,68): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(102,70): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(104,71): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(105,71): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(107,66): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(108,74): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(110,68): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(111,69): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(166,22): warning C4305: 'initializing': truncation from 'double' to 'float'
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(175,107): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(254,2): warning C4065: switch statement contains 'default' but no 'case' labels
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(316,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(401,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\util\vectorbase.h(204,36): warning C4244: 'argument': conversion from 'const Scalar' to 'float', possible loss of data
           with
           [
@@ -161,5 +161,5 @@ F:\Development\Tools\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.
               _Objty=RigidBody
           ]
 F:\Development\Tools\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\vector(615): message : see reference to function template instantiation 'void std::vector<RigidBody,std::allocator<RigidBody>>::_Emplace_back_with_unused_capacity<GamePhysics::Vec3&,GamePhysics::Vec3&,int&>(GamePhysics::Vec3 &,GamePhysics::Vec3 &,int &)' being compiled
-F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(362): message : see reference to function template instantiation 'void std::vector<RigidBody,std::allocator<RigidBody>>::emplace_back<GamePhysics::Vec3&,GamePhysics::Vec3&,int&>(GamePhysics::Vec3 &,GamePhysics::Vec3 &,int &)' being compiled
+F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Simulations\CoupledSimulator.cpp(353): message : see reference to function template instantiation 'void std::vector<RigidBody,std::allocator<RigidBody>>::emplace_back<GamePhysics::Vec3&,GamePhysics::Vec3&,int&>(GamePhysics::Vec3 &,GamePhysics::Vec3 &,int &)' being compiled
   Demo_2017.vcxproj -> F:\Development\Projects\Visual Studio\GP\GamePhysicsExercises\Win32\Debug\Simulations.lib
